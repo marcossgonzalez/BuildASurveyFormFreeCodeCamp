@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Título-->
+<title>
+    Astronaut - Survey Form
+</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Astronaut - Survey Form:</h1>
+    <p id="description">This is a survey form for our
+        astronaut selection system. People selected in this
+        are going to Mars.
+    </p>
+    <form id="survey-form">
+    <fieldset>
+        <label for="name" id="name-label">Please, enter your name: <input placeholder=" Enter your name" type="text" id="name" required></label>
+        <!--Name-->
+        <label for="name" id="email-label">Please, enter your e-mail: <input placeholder=" Enter your e-mail" type="email" id="email" required></label>
+        <!--E-mail-->
+        <label for="number" id="number-label">Please, enter your age: <input id="number"
+           placeholder="Age" type="number" pattern="[18-120]" min="18" max="120" name="textarea" ></label>        
+        <!--Age-->
+        </fieldset>
+    <fieldset>
+        <!--Seletor de onde conheceu o site-->
+        <select name="onde-conheceu" id="dropdown">
+            <option value="" required>Como você conheceu o site?</option>
+            <option value="">Linkedin</option>
+            <option value="">Google</option>
+            <option value="">Youtube</option>
+            <option value="">Outros</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        
+    </fieldset>
+    </form>
+</body>
+<footer></footer>
+</html>
