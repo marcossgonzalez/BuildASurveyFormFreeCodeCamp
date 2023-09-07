@@ -9,26 +9,55 @@ body{
     background-color: #1c1c2f;
     
 }
+
+h1, p{
+    margin: 0.5em auto;
+    text-align: center;
+    margin: 1em auto 1em auto;
+}
 fieldset{
     border: 0;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 0;
-    padding-right: 0;
-    
+    padding: 2%;
+    text-align: left;
+    margin: 1em auto 1em auto;
 }
 label{
-    display: block;
+    display: block; /** Para que as linhas dos textos fiquem separadas, e não inline, utilizamos o 'display:block'*/
+    /* A unidade rem significa 'root' no elemento <em> de ênfase e é relativa ao tamanho
+    da fonte do elemento html */
+    margin: 0.5rem; /** aqui o elemento rem define primeiro o topo de separação de 0.5 com ênfase e
+    **direita com separação de 0 */
+    
 }
+
 input, textarea{
     background-color: #1c1c2f;
     border: 1px #0a0a23 transparent ;
     color: #FFFFFF;
-    min-height: 2em;
+    min-height: 1.2em;
     
 }
-input::placeholder{
-    opacity: 0.9;
-    color: rgba(170, 186, 218, 0.605);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.surveyform{
+    display: block;
+    margin: 1em auto 1em auto;
+}
+h3{
+    color: #b0bcc8;
+    margin: 1em auto 1em auto;
+}
+.inline{
+    vertical-align: middle;
+    
+    
+}
+input[type="submit"]{
+    display: block;
+    width: 47%;
+    margin: 1em 1em auto;
+    height: 2em;
+    font-size: 1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
 }

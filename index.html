@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--Título-->
-<title>
-    Astronaut - Survey Form
-</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título-->
+    <title>
+        Astronaut - Survey Form
+    </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h1 id="title">Astronaut - Survey Form:</h1>
     <p id="description">This is a survey form for our
@@ -16,31 +18,60 @@
         are going to Mars.
     </p>
     <form id="survey-form">
-    <fieldset>
-        <label for="name" id="name-label">Please, enter your name: <input placeholder=" Enter your name" type="text" id="name" required></label>
-        <!--Name-->
-        <label for="email" id="email-label">Please, enter your e-mail: <input placeholder=" Enter your e-mail" type="email" id="email" required></label>
-        <!--E-mail-->
-        <label for="number" id="number-label">Please, enter your age: <input id="number"
-           placeholder="Age" type="number" pattern="[18-120]" min="18" max="120" name="textarea" ></label>        
-        <!--Age-->
+        <div class="personal-information">
+            <fieldset>
+                <label for="name" id="name-label">Please, enter your name: <input placeholder=" Enter your name" type="text"
+                        id="name" required></label>
+                <!--Name-->
+                <label for="email" id="email-label">Please, enter your e-mail: <input placeholder=" Enter your e-mail"
+                        type="email" id="email" required></label>
+                <!--E-mail-->
+                <label for="number" id="number-label">Please, enter your age: <input id="number" placeholder="Age"
+                        type="number" pattern="[18-120]" min="18" max="120" name="textarea" required></label>
+                <!--Age-->
+            </fieldset>
+            <fieldset>
+                <!--Seletor de onde conheceu o site-->
+                <h3>How did you get to know about this?</h3>
+                <select name="onde-conheceu" id="dropdown" required>
+                    <option value="">Linkedin</option>
+                    <option value="">Google</option>
+                    <option value="">Youtube</option>
+                    <option value="">Outros</option>
+                </select>
+            </fieldset>
+        <fieldset>
+        </div>
+            <!--Radio Buttons requeridos-->
+
+            <h2>Personal information</h2>
+            <h3>Did you complete your studies?</h3>
+            <label for=""><input name="estuda" type="radio" value="seletor">Estudo</label>
+            <label for=""><input name="estuda" type="radio" value="seletor">Completei meus estudos</label>
         </fieldset>
-    <fieldset>
-        <!--Seletor de onde conheceu o site-->
-        <select name="onde-conheceu" id="dropdown">
-            <option value="" required>Como você conheceu o site?</option>
-            <option value="">Linkedin</option>
-            <option value="">Google</option>
-            <option value="">Youtube</option>
-            <option value="">Outros</option>
-        </select>
-    </fieldset>
-    <fieldset>
-        <!--Radio Buttons requeridos-->
-        <label for=""><input name="estuda" type="radio" value="seletor">Estudo</label>
-        <label for=""><input name="estuda" type="radio" value="seletor">Completei meus estudos</label>
-    </fieldset>
+        <fieldset>
+            <div class="area-de-estudos">
+                <label>
+                    <h3>What is your area of study?</h3>
+                </label>
+                <label for="survey-form"><input value="Tecnology" type="checkbox" name="areadeestudos" id="survey-form" required> Tecnology</label>
+                <label for="survey-form"><input value="Arts" type="checkbox" name="areadeestudos" id="survey-form" required> Arts</label>
+                <label for="survey-form"><input value="Science" type="checkbox" name="areadeestudos" id="survey-form" required>Science</label>
+                <label for="survey-form"><input value="Engineer" type="checkbox" name="areadeestudos" id="survey-form" required>Engineer</label>
+                <label for="survey-form"><input value="Mathemathics" type="checkbox" name="areadeestudos" id="survey-form" required>Mathemathics</label>
+                <label for="survey-form"><input value="Design" type="checkbox" name="areadeestudos" id="survey-form" required>Design</label>
+                <label for="survey-form"><input value="Other" type="checkbox" name="areadeestudos" id="survey-form" required>Other</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <h4><label for="falemais">Tell us more about you in 280 characters:</label></h4>
+            <textarea name="bio" id="falemais" cols="50" rows="10" maxlength="280" required></textarea>
+        </fieldset>
+        <label for="submit"><input id="submit" type="submit" value="Submit"></label>
     </form>
 </body>
-<footer></footer>
+<footer>
+    <p>Astronaut survey - 2023</p>
+</footer>
+
 </html>
